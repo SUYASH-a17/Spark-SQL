@@ -6,3 +6,6 @@ In Spark DF method1 explains the dataframe methods in SparkSQL
 
 ## SparkSQL2 file
 In this we continue with our SparkSQL methods in dataframe
+
+## SparkSQL3 file
+More Sparksql on Dataframes and tables
