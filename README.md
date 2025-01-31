@@ -5,7 +5,7 @@ Learning Spark SQL
 In Spark DF method1 explains the dataframe methods in SparkSQL
 
 ## SparkSQL2 file
-In this we continue with our SparkSQL methods in dataframe
+Here we continue with our SparkSQL methods on dataframes
 
 ## SparkSQL3 file
 More Sparksql on Dataframes and tables using df methods
