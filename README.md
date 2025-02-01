@@ -13,3 +13,6 @@ More Sparksql on Dataframes and tables using df methods
 
 ## Spark dup file 
 dropping dup and null values using spark sql and df methods like fillna and dropna
+
+## Spark EDA file
+Exploratory Data Analysis with SparkSQL
