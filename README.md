@@ -22,3 +22,6 @@ Using SparkSQL window function implemented timeseries analysis
 
 ## Spark ML file
 Used vectorassembler and implemented Kmeans model
+
+## Spark ML2 file
+Used vectorassembler and implemented Linear Regression model
