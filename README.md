@@ -20,14 +20,19 @@ Exploratory Data Analysis with SparkSQL
 ## Spark Timeseries & Window function
 Using SparkSQL window function implemented timeseries analysis 
 
-The OVER clause is a powerful SQL feature used with window functions to perform calculations across a set of rows related to the current row
-Functionality: It enables aggregations, distributions, rankings, and offset comparisons within specified partitions of data3.
-Syntax: The basic structure is:
-sql
+### The OVER Clause in SQL
+
+The OVER clause is a powerful SQL feature used with window functions to perform calculations across a set of rows related to the current row.
+
+### Functionality
+It enables aggregations, distributions, rankings, and offset comparisons within specified partitions of data.
+
+### Syntax
+The basic structure is:
 function_name() OVER (
-  [PARTITION BY column(s)]
-  [ORDER BY column(s)]
-  [ROWS or RANGE clause]
+[PARTITION BY column(s)]
+[ORDER BY column(s)]
+[ROWS or RANGE clause]
 )
 
 The PARTITION BY clause in SQL divides the result set into partitions based on the specified partition_column(s). It allows you to perform calculations or apply window functions separately for each partition while retaining all rows in the result set12.
