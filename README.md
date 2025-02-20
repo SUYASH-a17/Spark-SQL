@@ -10,11 +10,16 @@ spark = SparkSession.builder.appName('SparkSQL1').getOrCreate()
 ```
 file_path = 'abcd.csv'
 df1 = spark.read.format("csv").option("header","true").load(file_path)
-df1.count()
+df1
 ```
 ## Sparksql1 file
 In Spark DF method1 explains the dataframe methods in SparkSQL
 Loading and working on csv & json files and many other sql operations
+```
+df1.show()  To show the DF in a nice format 
+df1.conut() Count of number of rows in DF
+df1.columns Count of number of columns in DF
+```
 
 ## SparkSQL2 file
 Here we continue with our SparkSQL methods on dataframes
