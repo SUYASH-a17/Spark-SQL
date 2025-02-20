@@ -1,6 +1,11 @@
 # Spark-SQL
 Learning Spark SQL
-
+### Importing & Loading Spark 
+```
+import pyspark
+from pyspark.sql import SparkSession
+spark = SparkSession.builder.appName('SparkSQL1').getOrCreate()
+```
 ## Sparksql1 file
 In Spark DF method1 explains the dataframe methods in SparkSQL
 Loading and working on csv & json files and many other sql operations
