@@ -20,7 +20,7 @@ Exploratory Data Analysis with SparkSQL
 ## Spark Timeseries & Window function
 Using SparkSQL window function implemented timeseries analysis 
 
-## The OVER Clause in SQL
+### The OVER Clause in SQL
 
 The `OVER` clause is a powerful SQL feature used with window functions to perform calculations across a set of rows related to the current row.
 
