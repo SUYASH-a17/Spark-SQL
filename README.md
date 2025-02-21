@@ -16,11 +16,13 @@ df1
 In Spark DF method1 explains the dataframe methods in SparkSQL
 Loading and working on csv & json files and many other sql operations
 ```
-df1.show()  To show the DF in a nice format 
-df1.conut() Count of number of rows in DF
-df1.columns Count of number of columns in DF
+df1.show()   # To show the DF in a nice format 
+df1.conut()  # Count of number of rows in DF
+df1.columns  # Count of number of columns in DF
+
 df3_sample = df3.sample(False, fraction = 0.1)
 df3_sample.show()
+
 df3_sort = df3_sample.sort("event_datetime")
 df3_sort.show()
 ```
