@@ -20,7 +20,7 @@ df1.show()   # To show the DF in a nice format
 df1.conut()  # Count of number of rows in DF
 df1.columns  # Count of number of columns in DF
 
-df3_sample = df3.sample(False, fraction = 0.1)  # sample method randomly selects subset of data from the DF fraction=0.1 means 10% from the total data
+df3_sample = df3.sample(withReplacement = False, fraction = 0.1)  # sample method randomly selects subset of data from the DF fraction=0.1 means 10% from the total data, withReplacement parameter and the false value means each row can be selected only once.
 df3_sample.show()
 
 df3_sort = df3_sample.sort("event_datetime")  # sorts the columns in ascending order
