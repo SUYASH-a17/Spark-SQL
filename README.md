@@ -20,11 +20,17 @@ df1.show()   # To show the DF in a nice format
 df1.conut()  # Count of number of rows in DF
 df1.columns  # Count of number of columns in DF
 
-df3_sample = df3.sample(False, fraction = 0.1)
+df3_sample = df3.sample(False, fraction = 0.1)  # sample method randomly selects subset of data from the DF fraction=0.1 means 10% from the total data
 df3_sample.show()
 
-df3_sort = df3_sample.sort("event_datetime")
+df3_sort = df3_sample.sort("event_datetime")  # sorts the columns in ascending order
 df3_sort.show()
+```
+SQL keywords
+```
+df1.filter(df1["location_id"]=='loc0').count()  # filter by matching the column and the values required and return the rows
+df1.groupBy("location_id").count().show()  # group the DF by "location_id"
+df1.orderBy("location_id").show()  # order the DF by the values in "location_id" 
 ```
 
 ## SparkSQL2 file
