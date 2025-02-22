@@ -28,9 +28,11 @@ df3_sort.show()
 ```
 SQL keywords
 ```
-df1.filter(df1["location_id"]=='loc0').count()  # filter by matching the column and the values required and return the rows
-df1.groupBy("location_id").count().show()  # group the DF by "location_id"
-df1.orderBy("location_id").show()  # order the DF by the values in "location_id" 
+df1.filter(df1["location_id"]=='loc0').count()                  # filter by matching the column and the values required and return the rows
+df1.groupBy("location_id").count().show()                       # group the DF by "location_id"
+df1.orderBy("location_id").show()                               # order the DF by the values in "location_id"
+df1.groupBy("location_id").agg({"temp_celcius":"mean"}).show()  # group the DF by "location_id" and calc the mean value of "temp_celcius"
+df1.groupBy("location_id").agg({"temp_celcius":"max"}).show()   # group the DF by "location_id" and calc the max value of "temp_celcius"
 ```
 
 ## SparkSQL2 file
