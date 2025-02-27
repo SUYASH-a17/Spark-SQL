@@ -33,6 +33,7 @@ df1.groupBy("location_id").count().show()                       # group the DF b
 df1.orderBy("location_id").show()                               # order the DF by the values in "location_id"
 df1.groupBy("location_id").agg({"temp_celcius":"mean"}).show()  # group the DF by "location_id" and calc the mean value of "temp_celcius"
 df1.groupBy("location_id").agg({"temp_celcius":"max"}).show()   # group the DF by "location_id" and calc the max value of "temp_celcius"
+df1.groupBy("location_id").agg({"temp_celcius":"mean"}).orderBy("location_id").show()  # group the DF by "location_id" and calc the mean value of "temp_celcius"  and order by "location_id"
 ```
 
 ## SparkSQL2 file
