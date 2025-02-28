@@ -40,8 +40,9 @@ df1.groupBy("location_id").agg({"temp_celcius":"mean"}).orderBy("location_id").s
 Here we continue with our SparkSQL methods on dataframes
 
 ```
-s_df.createOrReplaceTempView("utilization")
-#The createOrReplaceTempView method is used to create a temporary view of a DataFrame that you can query using SQL
+s_df.createOrReplaceTempView("utilization")            #The createOrReplaceTempView method is used to create a temporary view of a DataFrame that you can query using SQL
+s_sql = spark.sql("SELECT * FROM utilization LIMIT 10") s_sql.count()  #s_sql will contain the first 10 rows from the utilization
+s_sql = spark.sql("SELECT event_datetime AS e_dt FROM utilization LIMIT 10") s_sql.show()
 ```
 
 ## SparkSQL3 file
