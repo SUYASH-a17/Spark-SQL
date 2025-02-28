@@ -40,7 +40,8 @@ df1.groupBy("location_id").agg({"temp_celcius":"mean"}).orderBy("location_id").s
 Here we continue with our SparkSQL methods on dataframes
 
 ```
-s_df.createOrReplaceTempView("utilization") #The createOrReplaceTempView method is used to create a temporary view of a DataFrame that you can query using SQL
+s_df.createOrReplaceTempView("utilization")
+#The createOrReplaceTempView method is used to create a temporary view of a DataFrame that you can query using SQL
 ```
 
 ## SparkSQL3 file
