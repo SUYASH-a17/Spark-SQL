@@ -49,13 +49,11 @@ s_sql = spark.sql("SELECT event_datetime AS e_dt FROM utilization LIMIT 10") s_s
 More Sparksql on Dataframes using createOrReplaceTempView which creates a temp SQL view from DF
 
 ```
-df_s.createOrReplaceTempView("server")
-     
-
-df_c = spark.sql("SELECT DISTINCT server_id \
+df_s.createOrReplaceTempView("server")          # Create a temporary view from the DataFrame 'df_s'
+df_c = spark.sql("SELECT DISTINCT server_id \   # Run an SQL query to get distinct server IDs sorted in ascending order
                   FROM utilization \
                   ORDER BY server_id")
-df_c.show()
+df_c.show()                                     
 ```
 
 ## Spark dup file 
