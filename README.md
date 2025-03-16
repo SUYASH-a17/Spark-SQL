@@ -46,7 +46,7 @@ s_sql = spark.sql("SELECT event_datetime AS e_dt FROM utilization LIMIT 10") s_s
 ```
 
 ## SparkSQL3 file
-More Sparksql on Dataframes and tables using df methods
+More Sparksql on Dataframes using createOrReplaceTempView which creates a temp SQL view from DF
 
 ## Spark dup file 
 dropping dup and null values using spark sql and df methods like fillna and dropna
