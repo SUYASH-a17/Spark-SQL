@@ -64,7 +64,13 @@ df_join.show()
 ```
 
 ## Spark dup file 
-dropping dup and null values using spark sql and df methods like fillna and dropna
+A DataFrame with duplicate entries is created using sc.parallelize() and toDF()
+```
+df_dup = sc.parallelize([Row(server_name='101 Server', cpu_utilization = 85, session_count = 80),
+                         Row(server_name='101 Server', cpu_utilization = 80, session_count = 90),
+                         Row(server_name='102 Server', cpu_utilization = 85, session_count = 80),
+                         Row(server_name='102 Server', cpu_utilization = 85, session_count = 80)]).toDF()
+```
 
 ## Spark EDA file
 Exploratory Data Analysis with SparkSQL
