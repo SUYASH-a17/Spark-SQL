@@ -53,7 +53,14 @@ df_s.createOrReplaceTempView("server")          # Create a temporary view from t
 df_c = spark.sql("SELECT DISTINCT server_id \   # Run an SQL query to get distinct server IDs sorted in ascending order
                   FROM utilization \
                   ORDER BY server_id")
-df_c.show()                                     
+df_c.show()
+
+
+df_join = spark.sql("SELECT u.server_id, sn.server_name, u.session_count \   # Run an SQL query to get columns by joining 2 tables
+                    FROM utilization u \
+                    INNER JOIN server_name sn \
+                    ON sn.server_id = u.server_id")
+df_join.show()                                 
 ```
 
 ## Spark dup file 
